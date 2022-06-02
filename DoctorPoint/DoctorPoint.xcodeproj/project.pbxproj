@@ -10,18 +10,24 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		390452F328497AE00045A637 /* SigninScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F228497AE00045A637 /* SigninScreen.swift */; };
+		390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */; };
+		390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F528497AF40045A637 /* CreateAccountScreen.swift */; };
+		390452F928497D480045A637 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390452F828497D470045A637 /* Launch Screen.storyboard */; };
 		55A228C85879C96EAE8380D3 /* Pods_DoctorPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA9F1BF2B5B4C79034B2649 /* Pods_DoctorPoint.framework */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		390452F228497AE00045A637 /* SigninScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninScreen.swift; sourceTree = "<group>"; };
+		390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninOrCreateAccountScreen.swift; sourceTree = "<group>"; };
+		390452F528497AF40045A637 /* CreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountScreen.swift; sourceTree = "<group>"; };
+		390452F828497D470045A637 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3A3A6A277992CBCD91BEDAB5 /* Pods-DoctorPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.debug.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDF449EF1C07FF8E23B87DE /* Pods-DoctorPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.release.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.release.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* DoctorPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BA9F1BF2B5B4C79034B2649 /* Pods_DoctorPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +58,6 @@
 				3A3A6A277992CBCD91BEDAB5 /* Pods-DoctorPoint.debug.xcconfig */,
 				4BDF449EF1C07FF8E23B87DE /* Pods-DoctorPoint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,7 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
+				390452F528497AF40045A637 /* CreateAccountScreen.swift */,
+				390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */,
+				390452F828497D470045A637 /* Launch Screen.storyboard */,
+				390452F228497AE00045A637 /* SigninScreen.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
@@ -153,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390452F928497D480045A637 /* Launch Screen.storyboard in Resources */,
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
 			);
@@ -191,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				390452F328497AE00045A637 /* SigninScreen.swift in Sources */,
+				390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */,
+				390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
