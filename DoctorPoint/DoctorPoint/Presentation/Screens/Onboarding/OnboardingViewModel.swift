@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import shared
 
 final class ViewModel : ObservableObject{
     
-    @Published var  onboardsCards : [OnboardCardData] = [.init(title: "Thousands of doctors", imageName:"onboarding_1", text: "Access thousands of Doctors instantly.\nYou can easily contact with the doctors and contact for your needs."),
-                                                     .init(title:"Live talk with doctor", imageName:"onboarding_2", text: "Easily connect with doctor and start video chat for your better treatment & Prescription.")
-                                                     ,.init(title: "Chat with doctors", imageName: "onboarding_3", text: "Book an appointment with doctor. Chat with doctor via appointment letter.\nGet consultent.")
+    @Published var  onboardsCards : [OnboardingCardData] = [.init(title: "Thousands of doctors", description: "Access thousands of Doctors instantly.\nYou can easily contact with the doctors and contact for your needs.", image:"onboarding_1"),
+                                                            .init(title:"Live talk with doctor", description: "Easily connect with doctor and start video chat for your better treatment & Prescription.", image:"onboarding_2")
+                                                            ,.init(title: "Chat with doctors", description: "Book an appointment with doctor. Chat with doctor via appointment letter.\nGet consultent.", image: "onboarding_3")
     ]
     
-    func newCard (card : OnboardCardData){
+    func newCard (card : OnboardingCardData){
         self.onboardsCards.append(card)
     }
     

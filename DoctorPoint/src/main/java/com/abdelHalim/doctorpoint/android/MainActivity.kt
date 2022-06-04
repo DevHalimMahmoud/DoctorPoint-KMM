@@ -1,9 +1,9 @@
 package com.abdelHalim.doctorpoint.android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.abdelHalim.doctorpoint.Greeting
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.abdelHalim.doctorpoint.Greeting
 
 fun greet(): String {
     return Greeting().greeting()

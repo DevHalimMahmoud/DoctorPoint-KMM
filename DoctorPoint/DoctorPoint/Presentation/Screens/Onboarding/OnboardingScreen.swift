@@ -7,14 +7,14 @@
 //
 
 import SwiftUI
-
+import shared
 struct OnboardingScreen: View {
     @StateObject var vm = ViewModel()
     
     var body: some View {
         ZStack{
             TabView{
-                ForEach(vm.onboardsCards){card in
+                ForEach(vm.onboardsCards,id: \.self){card in
                     CardView( onboardCard: card).frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top)
                 }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top)
             }.ignoresSafeArea()

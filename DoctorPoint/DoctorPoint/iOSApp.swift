@@ -10,7 +10,8 @@ struct iOSApp: App {
             if(isFirstLaunch()){
                 OnboardingScreen()
             }else{
-                SigninOrCreateAccountScreen()
+//                SigninOrCreateAccountScreen()
+                OnboardingScreen()
             }
             
         }
