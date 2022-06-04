@@ -14,6 +14,10 @@
 		390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */; };
 		390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F528497AF40045A637 /* CreateAccountScreen.swift */; };
 		390452F928497D480045A637 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390452F828497D470045A637 /* Launch Screen.storyboard */; };
+		397AE533284BCB390096EB1D /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE532284BCB390096EB1D /* OnboardingScreen.swift */; };
+		397AE536284BD5E50096EB1D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE535284BD5E50096EB1D /* OnboardingViewModel.swift */; };
+		397AE53C284BD6780096EB1D /* OnboardCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE53B284BD6780096EB1D /* OnboardCardData.swift */; };
+		397AE540284BD8AD0096EB1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE53E284BD8AD0096EB1D /* CardView.swift */; };
 		55A228C85879C96EAE8380D3 /* Pods_DoctorPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA9F1BF2B5B4C79034B2649 /* Pods_DoctorPoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninOrCreateAccountScreen.swift; sourceTree = "<group>"; };
 		390452F528497AF40045A637 /* CreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountScreen.swift; sourceTree = "<group>"; };
 		390452F828497D470045A637 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		397AE532284BCB390096EB1D /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		397AE535284BD5E50096EB1D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		397AE53B284BD6780096EB1D /* OnboardCardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardCardData.swift; sourceTree = "<group>"; };
+		397AE53E284BD8AD0096EB1D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3A3A6A277992CBCD91BEDAB5 /* Pods-DoctorPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.debug.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDF449EF1C07FF8E23B87DE /* Pods-DoctorPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.release.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.release.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* DoctorPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +69,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		397AE534284BD59A0096EB1D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				397AE53D284BD8AD0096EB1D /* Custom Views */,
+				397AE532284BCB390096EB1D /* OnboardingScreen.swift */,
+				397AE535284BD5E50096EB1D /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		397AE538284BD6200096EB1D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				397AE53A284BD6780096EB1D /* Model */,
+				397AE539284BD6470096EB1D /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		397AE539284BD6470096EB1D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				397AE534284BD59A0096EB1D /* Onboarding */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		397AE53A284BD6780096EB1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				397AE53B284BD6780096EB1D /* OnboardCardData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		397AE53D284BD8AD0096EB1D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				397AE53E284BD8AD0096EB1D /* CardView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +133,7 @@
 		7555FF7D242A565900829871 /* DoctorPoint */ = {
 			isa = PBXGroup;
 			children = (
+				397AE538284BD6200096EB1D /* Presentation */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				390452F528497AF40045A637 /* CreateAccountScreen.swift */,
 				390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */,
@@ -199,9 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397AE533284BCB390096EB1D /* OnboardingScreen.swift in Sources */,
+				397AE536284BD5E50096EB1D /* OnboardingViewModel.swift in Sources */,
+				397AE53C284BD6780096EB1D /* OnboardCardData.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				390452F328497AE00045A637 /* SigninScreen.swift in Sources */,
 				390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */,
+				397AE540284BD8AD0096EB1D /* CardView.swift in Sources */,
 				390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-struct ContentView: View {
+struct SigninOrCreateAccountScreen: View {
     @State var selection: Int? = nil
     
     var body: some View {
@@ -64,6 +64,6 @@ struct ContentView: View {
 @available(iOS 15.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SigninOrCreateAccountScreen()
     }
 }

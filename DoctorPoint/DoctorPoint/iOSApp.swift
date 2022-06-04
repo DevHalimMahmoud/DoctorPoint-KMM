@@ -5,9 +5,25 @@ import shared
 @main
 struct iOSApp: App {
     let greet = Greeting().greeting()
-	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
-	}
+    var body: some Scene {
+        WindowGroup {
+            if(isFirstLaunch()){
+                OnboardingScreen()
+            }else{
+                SigninOrCreateAccountScreen()
+            }
+            
+        }
+    }
 }
+
+
+func isFirstLaunch() -> Bool {
+    if !UserDefaults.standard.bool(forKey: "HasLaunched") {
+        UserDefaults.standard.set(true, forKey: "HasLaunched")
+        UserDefaults.standard.synchronize()
+        return true
+    }
+    return false
+}
+
