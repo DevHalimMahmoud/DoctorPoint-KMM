@@ -5,7 +5,6 @@ plugins {
 }
 
 version = "1.0"
-
 kotlin {
     android()
     iosX64()
@@ -19,11 +18,25 @@ kotlin {
         podfile = project.file("../DoctorPoint/Podfile")
         framework {
             baseName = "shared"
+            export("dev.icerock.moko:mvvm-core:0.13.0")
+            export("dev.icerock.moko:mvvm-livedata:0.13.0")
+            export("dev.icerock.moko:mvvm-livedata-resources:0.13.0")
+            export("dev.icerock.moko:mvvm-state:0.13.0")
         }
     }
     
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+                //MVVM
+
+                api("dev.icerock.moko:mvvm-core:0.13.0")
+                api("dev.icerock.moko:mvvm-livedata:0.13.0")
+                api("dev.icerock.moko:mvvm-livedata-resources:0.13.0")
+                api("dev.icerock.moko:mvvm-state:0.13.0")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
@@ -50,6 +63,7 @@ kotlin {
             iosSimulatorArm64Test.dependsOn(this)
         }
     }
+
 }
 
 android {
@@ -60,3 +74,6 @@ android {
         targetSdk = 32
     }
 }
+//dependencies {
+//    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+//}
