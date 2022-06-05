@@ -18,10 +18,13 @@ kotlin {
         podfile = project.file("../DoctorPoint/Podfile")
         framework {
             baseName = "shared"
+
             export("dev.icerock.moko:mvvm-core:0.13.0")
             export("dev.icerock.moko:mvvm-livedata:0.13.0")
             export("dev.icerock.moko:mvvm-livedata-resources:0.13.0")
             export("dev.icerock.moko:mvvm-state:0.13.0")
+
+            export("com.russhwolf:multiplatform-settings-no-arg:0.9")
         }
     }
     
@@ -30,11 +33,13 @@ kotlin {
             dependencies {
                 api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
                 //MVVM
-
                 api("dev.icerock.moko:mvvm-core:0.13.0")
                 api("dev.icerock.moko:mvvm-livedata:0.13.0")
                 api("dev.icerock.moko:mvvm-livedata-resources:0.13.0")
                 api("dev.icerock.moko:mvvm-state:0.13.0")
+
+                api("com.russhwolf:multiplatform-settings-no-arg:0.9")
+
             }
         }
         val commonTest by getting {
