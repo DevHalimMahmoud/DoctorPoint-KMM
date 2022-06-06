@@ -66,10 +66,10 @@ struct SigninScreen: View {
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                     Spacer().frame(height: 40)
-                    NavigationLink(destination: SigninScreen(), tag: 1, selection: $selection) {
+                    NavigationLink(destination: CreateAccountScreen(), tag: 2, selection: $selection) {
                         Button(action: {
                             print("tapped!")
-                            self.selection = 1
+                            self.selection = 2
                         }) {
                             HStack {
                                 Text("Sign In")
@@ -105,17 +105,17 @@ struct SigninScreen: View {
                     Image("instagram").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 55, height: 55).padding(.trailing)
                 }.frame(maxWidth:.infinity,alignment:.leading).padding(.horizontal)
-            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).offset(y:-30).padding(.horizontal,5)
+            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).padding(.horizontal,5)
             
             HStack{
                 Text("Haven't any account?").fontWeight(.ultraLight).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.center).frame( alignment: .center)
                 NavigationLink(destination: CreateAccountScreen(), tag: 1, selection: $selection) {
-                    Text("Create account").foregroundColor(Color("green")).font(.body).multilineTextAlignment(.center).frame(alignment: .center).offset(x:-2).onTapGesture(perform: {
+                    Text("Create account").foregroundColor(Color("green")).font(.body).multilineTextAlignment(.center).frame(alignment: .center).onTapGesture(perform: {
                         self.selection = 1
                     })}
             }.padding().frame(alignment:.bottom)
             
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white"))
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true)
         
     }
 }

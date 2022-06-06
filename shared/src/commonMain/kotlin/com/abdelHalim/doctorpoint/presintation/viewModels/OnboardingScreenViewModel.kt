@@ -1,7 +1,6 @@
 package com.abdelHalim.doctorpoint.presintation.viewModels
 
 import com.abdelHalim.doctorpoint.presintation.models.OnboardingCardData
-import com.russhwolf.settings.Settings
 import dev.icerock.moko.mvvm.livedata.LiveData
 import dev.icerock.moko.mvvm.livedata.MutableLiveData
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
@@ -28,6 +27,4 @@ class OnboardingScreenViewModel : ViewModel() {
         )
     )
     val onboardingData: LiveData<Array<OnboardingCardData>> = _onboardingData
-
-
 }

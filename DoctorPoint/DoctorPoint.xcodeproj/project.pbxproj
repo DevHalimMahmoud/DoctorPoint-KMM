@@ -86,6 +86,7 @@
 		397AE539284BD6470096EB1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				39A7FABE284D82C5009F9120 /* Signin */,
 				397AE534284BD59A0096EB1D /* Onboarding */,
 			);
 			path = Screens;
@@ -104,6 +105,14 @@
 				397AE53E284BD8AD0096EB1D /* CardView.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		39A7FABE284D82C5009F9120 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				390452F228497AE00045A637 /* SigninScreen.swift */,
+			);
+			path = Signin;
 			sourceTree = "<group>";
 		};
 		7555FF72242A565900829871 = {
@@ -132,7 +141,6 @@
 				390452F528497AF40045A637 /* CreateAccountScreen.swift */,
 				390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */,
 				390452F828497D470045A637 /* Launch Screen.storyboard */,
-				390452F228497AE00045A637 /* SigninScreen.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,

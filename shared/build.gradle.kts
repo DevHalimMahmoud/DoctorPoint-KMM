@@ -27,7 +27,7 @@ kotlin {
             export("com.russhwolf:multiplatform-settings-no-arg:0.9")
         }
     }
-    
+
     sourceSets {
         val commonMain by getting {
             dependencies {

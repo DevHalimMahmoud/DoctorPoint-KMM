@@ -131,10 +131,10 @@ struct CreateAccountScreen: View {
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                     Spacer().frame(height: 40)
-                    NavigationLink(destination: SigninScreen(), tag: 1, selection: $selection) {
+                    NavigationLink(destination: SigninScreen(), tag: 2, selection: $selection) {
                         Button(action: {
                             print("tapped!")
-                            self.selection = 1
+                            self.selection = 2
                         }) {
                             HStack {
                                 Text("Create account")
@@ -177,12 +177,11 @@ struct CreateAccountScreen: View {
                     Image("instagram").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 55, height: 55).padding(.trailing)
                 }.frame(maxWidth:.infinity,alignment:.leading).padding(.horizontal)
-            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).offset(y:-30).padding(.horizontal,5)
+            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).padding(.horizontal,5)
             
             
             
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white"))
-        
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true)
     }
 }
 
