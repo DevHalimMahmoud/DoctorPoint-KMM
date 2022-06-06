@@ -19,7 +19,7 @@ struct ForgetPasswordScreen: View {
         case myField
     }
     var body: some View {
-        VStack{
+        VStack(){
             Text("Forgot password")
                 .fontWeight(.semibold)
                 .font(.title).foregroundColor(.gray).frame(maxWidth:.infinity,alignment:.leading)
@@ -60,23 +60,26 @@ struct ForgetPasswordScreen: View {
             Rectangle()
                 .frame(height: 1)
                 .foregroundColor(.gray)
-            NavigationLink(destination: SigninScreen(), tag: 2, selection: $selection) {
-                Button(action: {
-                    print("tapped!")
-                    self.selection = 2
-                }) {
-                    HStack {
-                        Text("Send OTP")
-                            .fontWeight(.semibold)
-                            .font(.body).padding()
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity,maxHeight: 28)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color("green"))
-                    .cornerRadius(15)
-                }.frame(maxHeight:.infinity,alignment:.bottom).padding(.bottom)
-            }
+            HStack(alignment:.bottom){
+                NavigationLink(destination: RecoveryPasswordScreen(), tag: 2, selection: $selection) {
+                    Button(action: {
+                        print("tapped!")
+                        self.selection = 2
+                    }) {
+                        HStack {
+                            Text("Send OTP")
+                                .fontWeight(.semibold)
+                                .font(.body).padding()
+                        }
+                        .frame(minWidth: 0, maxWidth: .infinity,maxHeight: 28)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color("green"))
+                        .cornerRadius(15)
+                    }.frame(alignment:.bottom).padding(.bottom)
+                }.frame(alignment:.bottom)
+                
+            }.frame(maxHeight:.infinity,alignment: .bottom)
         }.frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .topLeading).navigationBarBackButtonHidden(true).navigationBarItems(leading: Image("back_button").frame(alignment:.bottomLeading).onTapGesture(perform: {
             self.presentationMode.wrappedValue.dismiss()
         })).padding(.horizontal)

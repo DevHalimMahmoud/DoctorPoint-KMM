@@ -22,7 +22,7 @@ struct CreateAccountScreen: View {
     var body: some View {
         ScrollView{
             VStack{
-                Spacer().frame(height: 30)
+                
                 Group{
                     Image("logo").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 130, height: 100)
@@ -182,7 +182,7 @@ struct CreateAccountScreen: View {
             
             
             
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true).ignoresSafeArea()
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true)
     }
 }
 

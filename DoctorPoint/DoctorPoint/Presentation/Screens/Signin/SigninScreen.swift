@@ -19,7 +19,6 @@ struct SigninScreen: View {
     var body: some View {
         ScrollView{
             VStack{
-                Spacer().frame(height: 30)
                 Group{
                     Image("logo").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 130, height: 100)
@@ -118,7 +117,7 @@ struct SigninScreen: View {
                     })}
             }.padding().frame(alignment:.bottom)
             
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true).ignoresSafeArea()
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true)
         
     }
 }
