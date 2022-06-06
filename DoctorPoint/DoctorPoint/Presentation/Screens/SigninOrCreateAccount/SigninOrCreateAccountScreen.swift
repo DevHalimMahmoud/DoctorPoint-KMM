@@ -57,7 +57,7 @@ struct SigninOrCreateAccountScreen: View {
                         }.padding(.horizontal)}
                 }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).padding(.horizontal)
             }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).ignoresSafeArea()
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).ignoresSafeArea()
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white"))
     }
 }
 

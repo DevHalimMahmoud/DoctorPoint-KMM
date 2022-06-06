@@ -19,6 +19,7 @@ struct SigninScreen: View {
     var body: some View {
         ScrollView{
             VStack{
+                Spacer().frame(height: 30)
                 Group{
                     Image("logo").resizable().aspectRatio(contentMode: .fit)
                         .frame(width: 130, height: 100)
@@ -84,8 +85,10 @@ struct SigninScreen: View {
                         }.padding(.horizontal).padding(.bottom,5)
                     }
                 }
-                
-                Text("Forgot Password?").fontWeight(.ultraLight).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.center).frame( maxWidth: .infinity, alignment: .center)
+                NavigationLink(destination: ForgetPasswordScreen(), tag: 3, selection: $selection) {
+                    Text("Forgot Password?").fontWeight(.ultraLight).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.center).frame( maxWidth: .infinity, alignment: .center).onTapGesture(perform: {
+                        self.selection = 3
+                    })}
                 Spacer().frame(height: 40)
                 HStack{
                     Text("Or Sign in With").fontWeight(.ultraLight).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.leading).frame( alignment: .center)
@@ -115,7 +118,7 @@ struct SigninScreen: View {
                     })}
             }.padding().frame(alignment:.bottom)
             
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true)
+        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).navigationBarBackButtonHidden(true).ignoresSafeArea()
         
     }
 }
