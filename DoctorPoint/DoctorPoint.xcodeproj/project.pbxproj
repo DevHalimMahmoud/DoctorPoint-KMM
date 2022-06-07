@@ -18,6 +18,7 @@
 		397AE540284BD8AD0096EB1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE53E284BD8AD0096EB1D /* CardView.swift */; };
 		39A7FAC3284D8D79009F9120 /* ForgetPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7FAC2284D8D79009F9120 /* ForgetPasswordScreen.swift */; };
 		39A7FAC6284DB822009F9120 /* RecoveryPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7FAC5284DB822009F9120 /* RecoveryPasswordScreen.swift */; };
+		39A7FAC9284E854E009F9120 /* SetupProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7FAC8284E854E009F9120 /* SetupProfileScreen.swift */; };
 		55A228C85879C96EAE8380D3 /* Pods_DoctorPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA9F1BF2B5B4C79034B2649 /* Pods_DoctorPoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		397AE53E284BD8AD0096EB1D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		39A7FAC2284D8D79009F9120 /* ForgetPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordScreen.swift; sourceTree = "<group>"; };
 		39A7FAC5284DB822009F9120 /* RecoveryPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordScreen.swift; sourceTree = "<group>"; };
+		39A7FAC8284E854E009F9120 /* SetupProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileScreen.swift; sourceTree = "<group>"; };
 		3A3A6A277992CBCD91BEDAB5 /* Pods-DoctorPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.debug.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDF449EF1C07FF8E23B87DE /* Pods-DoctorPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.release.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.release.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* DoctorPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		397AE539284BD6470096EB1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				39A7FAC7284E851D009F9120 /* SetupProfile */,
 				39A7FAC4284DB7DE009F9120 /* RecoveryPassword */,
 				39A7FAC1284D8D50009F9120 /* ForgetPassword */,
 				39A7FAC0284D8CEC009F9120 /* SigninOrCreateAccount */,
@@ -153,6 +156,14 @@
 				39A7FAC5284DB822009F9120 /* RecoveryPasswordScreen.swift */,
 			);
 			path = RecoveryPassword;
+			sourceTree = "<group>";
+		};
+		39A7FAC7284E851D009F9120 /* SetupProfile */ = {
+			isa = PBXGroup;
+			children = (
+				39A7FAC8284E854E009F9120 /* SetupProfileScreen.swift */,
+			);
+			path = SetupProfile;
 			sourceTree = "<group>";
 		};
 		7555FF72242A565900829871 = {
@@ -293,6 +304,7 @@
 			files = (
 				397AE533284BCB390096EB1D /* OnboardingScreen.swift in Sources */,
 				39A7FAC6284DB822009F9120 /* RecoveryPasswordScreen.swift in Sources */,
+				39A7FAC9284E854E009F9120 /* SetupProfileScreen.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				390452F328497AE00045A637 /* SigninScreen.swift in Sources */,
 				390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */,

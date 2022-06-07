@@ -132,7 +132,7 @@ struct CreateAccountScreen: View {
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                     Spacer().frame(height: 40)
-                    NavigationLink(destination: SigninScreen(), tag: 2, selection: $selection) {
+                    NavigationLink(destination: SetupProfileScreen(), tag: 2, selection: $selection) {
                         Button(action: {
                             print("tapped!")
                             self.selection = 2

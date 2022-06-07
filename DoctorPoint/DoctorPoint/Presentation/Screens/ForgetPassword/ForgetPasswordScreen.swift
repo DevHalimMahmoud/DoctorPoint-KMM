@@ -24,7 +24,7 @@ struct ForgetPasswordScreen: View {
                 .fontWeight(.semibold)
                 .font(.title).foregroundColor(.gray).frame(maxWidth:.infinity,alignment:.leading)
             
-            Text("Please enter your phone number below to recive your OTP number.").fontWeight(.ultraLight).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.leading).frame(maxWidth:.infinity,alignment:.leading).padding(.vertical)
+            Text("Please enter your phone number below to recive your OTP number.").fontWeight(.light).foregroundColor(Color.gray).font(.subheadline).multilineTextAlignment(.leading).frame(maxWidth:.infinity,alignment:.leading).padding(.vertical)
             Spacer().frame(height: 15)
             
             HStack {

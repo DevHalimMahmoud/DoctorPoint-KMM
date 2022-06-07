@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import shared
 @available(iOS 15.0, *)
 struct SigninScreen: View {
     @State var selection: Int? = nil
