@@ -9,6 +9,11 @@ import SwiftUI
 import shared
 @available(iOS 15.0, *)
 struct SigninScreen: View {
+    @State var tabBarPages: [TabBarPageModel] = [TabBarPageModel(page: CreateAccountScreen(), icon: "f1", tag: "f1", color: Color.white),
+                                            TabBarPageModel(page: ForgetPasswordScreen(), icon: "notification", tag: "notification", color: Color.white),
+                                            TabBarPageModel(page: CreateAccountScreen(), icon: "search", tag: "search", color: Color.white),
+                                            TabBarPageModel(page: CreateAccountScreen(), icon: "document", tag: "document", color: Color.white),
+                                            TabBarPageModel(page: CreateAccountScreen(), icon: "category", tag: "category", color: Color.white)]
     @State var selection: Int? = nil
     @State private var email: String = ""
     @State private var password: String = ""
@@ -66,7 +71,7 @@ struct SigninScreen: View {
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                     Spacer().frame(height: 40)
-                    NavigationLink(destination: CreateAccountScreen(), tag: 2, selection: $selection) {
+                    NavigationLink(destination: MainScreen(pages: $tabBarPages), tag: 2, selection: $selection) {
                         Button(action: {
                             print("tapped!")
                             self.selection = 2
@@ -121,6 +126,8 @@ struct SigninScreen: View {
         
     }
 }
+
+
 
 @available(iOS 15.0, *)
 struct SigninScreen_Previews: PreviewProvider {

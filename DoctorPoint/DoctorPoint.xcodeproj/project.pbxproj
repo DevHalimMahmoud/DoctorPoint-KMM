@@ -14,6 +14,8 @@
 		390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */; };
 		390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390452F528497AF40045A637 /* CreateAccountScreen.swift */; };
 		390452F928497D480045A637 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390452F828497D470045A637 /* Launch Screen.storyboard */; };
+		3937E185285561C700D2C724 /* TapBarPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3937E184285561C600D2C724 /* TapBarPageModel.swift */; };
+		39681EAC2855392C00DD48D4 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39681EAB2855392C00DD48D4 /* MainScreen.swift */; };
 		397AE533284BCB390096EB1D /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE532284BCB390096EB1D /* OnboardingScreen.swift */; };
 		397AE540284BD8AD0096EB1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397AE53E284BD8AD0096EB1D /* CardView.swift */; };
 		39A7FAC3284D8D79009F9120 /* ForgetPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7FAC2284D8D79009F9120 /* ForgetPasswordScreen.swift */; };
@@ -30,6 +32,8 @@
 		390452F428497AF40045A637 /* SigninOrCreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninOrCreateAccountScreen.swift; sourceTree = "<group>"; };
 		390452F528497AF40045A637 /* CreateAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountScreen.swift; sourceTree = "<group>"; };
 		390452F828497D470045A637 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3937E184285561C600D2C724 /* TapBarPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarPageModel.swift; sourceTree = "<group>"; };
+		39681EAB2855392C00DD48D4 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		397AE532284BCB390096EB1D /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		397AE53E284BD8AD0096EB1D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		39A7FAC2284D8D79009F9120 /* ForgetPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordScreen.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		39681EAA2855390D00DD48D4 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39681EAB2855392C00DD48D4 /* MainScreen.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		397AE534284BD59A0096EB1D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 		397AE539284BD6470096EB1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				39681EAA2855390D00DD48D4 /* MainScreen */,
 				39A7FAC7284E851D009F9120 /* SetupProfile */,
 				39A7FAC4284DB7DE009F9120 /* RecoveryPassword */,
 				39A7FAC1284D8D50009F9120 /* ForgetPassword */,
@@ -106,6 +119,7 @@
 		397AE53A284BD6780096EB1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3937E184285561C600D2C724 /* TapBarPageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,9 +319,11 @@
 				397AE533284BCB390096EB1D /* OnboardingScreen.swift in Sources */,
 				39A7FAC6284DB822009F9120 /* RecoveryPasswordScreen.swift in Sources */,
 				39A7FAC9284E854E009F9120 /* SetupProfileScreen.swift in Sources */,
+				3937E185285561C700D2C724 /* TapBarPageModel.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				390452F328497AE00045A637 /* SigninScreen.swift in Sources */,
 				390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */,
+				39681EAC2855392C00DD48D4 /* MainScreen.swift in Sources */,
 				39A7FAC3284D8D79009F9120 /* ForgetPasswordScreen.swift in Sources */,
 				397AE540284BD8AD0096EB1D /* CardView.swift in Sources */,
 				390452F728497AF40045A637 /* CreateAccountScreen.swift in Sources */,
