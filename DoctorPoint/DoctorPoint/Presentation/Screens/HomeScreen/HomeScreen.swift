@@ -35,16 +35,23 @@ struct HomeScreen: View {
             Text("Specialist").fontWeight(.semibold)
                 .font(.title2).foregroundColor(.gray).frame(maxWidth:.infinity,alignment:.leading).padding(.horizontal).padding(.top)
             
-            //            List{
-            //                SpecialistCardView(specialistCardData: .init(speciality: "Cardio Specialist", numberOfDoctors: "27", image: "lungs", color: "#129A7F"))
-            //            }.frame(minHeight: 135).border(Color.red)
+            
             ScrollView (.horizontal, showsIndicators: false) {
                 LazyHStack  {
                     ForEach ((0...vm.specialityData.value!.size-1), id: \.self) {index in
                         SpecialistCardView( specialistCardData: (vm.specialityData.value?.get(index: index))!)
                     }
                     
-                }
+                }.padding(.horizontal)
+            }.padding(.bottom)
+            
+            ScrollView (.horizontal, showsIndicators: false) {
+                LazyHStack  {
+                    ForEach ((0...vm.specialityPricesData.value!.size-1), id: \.self) {index in
+                        SpecialistPricesCardView( specialistPriceCardData: (vm.specialityPricesData.value?.get(index: index))!)
+                    }
+                    
+                }.padding(.horizontal)
             }
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top).navigationBarBackButtonHidden(true).edgesIgnoringSafeArea(.top).background(Color("white").edgesIgnoringSafeArea(.all))

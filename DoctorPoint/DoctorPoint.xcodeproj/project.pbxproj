@@ -23,6 +23,7 @@
 		39A7FAC9284E854E009F9120 /* SetupProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7FAC8284E854E009F9120 /* SetupProfileScreen.swift */; };
 		39D8B751285F15C200DBA911 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8B750285F15C200DBA911 /* HomeScreen.swift */; };
 		39D8B754285F9AAF00DBA911 /* SpecialistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8B753285F9AAF00DBA911 /* SpecialistCardView.swift */; };
+		39D8B7562860E3D900DBA911 /* SpecialistPricesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8B7552860E3D900DBA911 /* SpecialistPricesCardView.swift */; };
 		55A228C85879C96EAE8380D3 /* Pods_DoctorPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA9F1BF2B5B4C79034B2649 /* Pods_DoctorPoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		39A7FAC8284E854E009F9120 /* SetupProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileScreen.swift; sourceTree = "<group>"; };
 		39D8B750285F15C200DBA911 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		39D8B753285F9AAF00DBA911 /* SpecialistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistCardView.swift; sourceTree = "<group>"; };
+		39D8B7552860E3D900DBA911 /* SpecialistPricesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistPricesCardView.swift; sourceTree = "<group>"; };
 		3A3A6A277992CBCD91BEDAB5 /* Pods-DoctorPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.debug.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDF449EF1C07FF8E23B87DE /* Pods-DoctorPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorPoint.release.xcconfig"; path = "Target Support Files/Pods-DoctorPoint/Pods-DoctorPoint.release.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* DoctorPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				39D8B753285F9AAF00DBA911 /* SpecialistCardView.swift */,
+				39D8B7552860E3D900DBA911 /* SpecialistPricesCardView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				39A7FAC9284E854E009F9120 /* SetupProfileScreen.swift in Sources */,
 				3937E185285561C700D2C724 /* TapBarPageModel.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				39D8B7562860E3D900DBA911 /* SpecialistPricesCardView.swift in Sources */,
 				390452F328497AE00045A637 /* SigninScreen.swift in Sources */,
 				390452F628497AF40045A637 /* SigninOrCreateAccountScreen.swift in Sources */,
 				39681EAC2855392C00DD48D4 /* MainScreen.swift in Sources */,
