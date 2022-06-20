@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+
 }
 
 version = "1.0"
@@ -25,6 +26,7 @@ kotlin {
             export("dev.icerock.moko:mvvm-state:0.13.0")
 
             export("com.russhwolf:multiplatform-settings-no-arg:0.9")
+
         }
     }
 

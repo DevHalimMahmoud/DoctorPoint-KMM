@@ -9,7 +9,7 @@ import SwiftUI
 import shared
 @available(iOS 15.0, *)
 struct SigninScreen: View {
-    @State var tabBarPages: [TabBarPageModel] = [TabBarPageModel(page: CreateAccountScreen(), icon: "f1", tag: "f1", color: Color.white),
+    @State var tabBarPages: [TabBarPageModel] = [TabBarPageModel(page: HomeScreen(), icon: "f1", tag: "home", color: Color.white),
                                             TabBarPageModel(page: ForgetPasswordScreen(), icon: "notification", tag: "notification", color: Color.white),
                                             TabBarPageModel(page: CreateAccountScreen(), icon: "search", tag: "search", color: Color.white),
                                             TabBarPageModel(page: CreateAccountScreen(), icon: "document", tag: "document", color: Color.white),
