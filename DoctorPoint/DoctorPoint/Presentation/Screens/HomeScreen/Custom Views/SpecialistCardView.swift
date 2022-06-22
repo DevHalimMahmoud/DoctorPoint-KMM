@@ -16,7 +16,7 @@ struct SpecialistCardView: View {
             Image(specialistCardData.image).padding(.vertical,5).frame(alignment:.top)
             Text(specialistCardData.speciality).foregroundColor(.white).fontWeight(.bold).multilineTextAlignment(.center).padding(.horizontal,5).font(.subheadline).frame(alignment:.center)
             Text(specialistCardData.numberOfDoctors+" Doctors").foregroundColor(.white).fontWeight(.light).multilineTextAlignment(.center).font(.caption2).frame(alignment:.bottom)
-        }.frame(width:90,height: 132).background(Color (hex: specialistCardData.color)).cornerRadius(10).padding(.leading)
+        }.frame(width:90,height: 132).background(Color (hex: specialistCardData.color)).cornerRadius(10)
     }
 }
 

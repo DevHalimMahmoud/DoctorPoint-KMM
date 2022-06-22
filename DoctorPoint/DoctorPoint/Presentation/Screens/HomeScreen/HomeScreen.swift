@@ -54,6 +54,17 @@ struct HomeScreen: View {
                 }.padding(.horizontal)
             }
             
+            Text("Top doctors").fontWeight(.semibold)
+                .font(.title2).foregroundColor(.gray).frame(maxWidth:.infinity,alignment:.leading).padding(.horizontal).padding(.top)
+            ScrollView(.horizontal,showsIndicators: false){
+                LazyHStack{
+                    ForEach((0...vm.topDoctorsCardData.value!.size-1),id: \.self){ index in
+                        TopDoctorsCardView(topDoctorCardData: (vm.topDoctorsCardData.value?.get(index: index))!)
+                    }
+                }.padding(.horizontal)
+            }
+            
+            Spacer().padding(50)
         }.frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top).navigationBarBackButtonHidden(true).edgesIgnoringSafeArea(.top).background(Color("white").edgesIgnoringSafeArea(.all))
         
     }
