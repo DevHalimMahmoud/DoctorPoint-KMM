@@ -65,7 +65,9 @@ struct HomeScreen: View {
             }
             
             Spacer().padding(50)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top).navigationBarBackButtonHidden(true).edgesIgnoringSafeArea(.top).background(Color("white").edgesIgnoringSafeArea(.all))
+        }.navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true).navigationBarTitleDisplayMode(.inline)
+        .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top).edgesIgnoringSafeArea(.top).background(Color("white").edgesIgnoringSafeArea(.all))
         
     }
 }

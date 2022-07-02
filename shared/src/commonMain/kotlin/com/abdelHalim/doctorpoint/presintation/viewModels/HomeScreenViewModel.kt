@@ -58,12 +58,12 @@ class HomeScreenViewModel : ViewModel() {
     private val _topDoctorsCardData: MutableLiveData<Array<TopDoctorsCardData>> = MutableLiveData(
         arrayOf(
             TopDoctorsCardData(
-                name = "Dr.AbdelHalim",
+                name = "Dr. AbdelHalim",
                 speciality = "Cardio Specialist",
                 image = "abdelHalim",
             ),
             TopDoctorsCardData(
-                name = "Dr. Mahmud Naser",
+                name = "Dr. Mahmud N",
                 speciality = "Heart Surgeon",
                 image = "doctor-1",
             ),
@@ -73,7 +73,7 @@ class HomeScreenViewModel : ViewModel() {
                 image = "doctor-2",
             ),
             TopDoctorsCardData(
-                name = "Dr. Mahmud Naser",
+                name = "Dr. Mahmud N",
                 speciality = "Heart Surgeon",
                 image = "doctor-1",
             ),

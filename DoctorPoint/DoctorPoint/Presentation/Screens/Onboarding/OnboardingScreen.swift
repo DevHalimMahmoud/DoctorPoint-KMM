@@ -8,6 +8,7 @@
 
 import SwiftUI
 import shared
+@available(iOS 15.0, *)
 struct OnboardingScreen: View {
     var vm = OnboardingScreenViewModel()
     
@@ -24,6 +25,7 @@ struct OnboardingScreen: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct OnboardingScreen_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingScreen()

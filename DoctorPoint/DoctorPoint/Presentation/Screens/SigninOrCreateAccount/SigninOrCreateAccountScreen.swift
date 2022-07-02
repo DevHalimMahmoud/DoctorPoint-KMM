@@ -12,7 +12,6 @@ struct SigninOrCreateAccountScreen: View {
     @State var selection: Int? = nil
     
     var body: some View {
-        NavigationView {
             VStack{
                 VStack{
                     Image("logo").resizable().aspectRatio(contentMode: .fit)
@@ -56,8 +55,8 @@ struct SigninOrCreateAccountScreen: View {
                             .cornerRadius(15)
                         }.padding(.horizontal)}
                 }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).padding(.horizontal)
-            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).ignoresSafeArea()
-        }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white"))
+            }.frame(maxWidth:.infinity,maxHeight: .infinity,alignment: .top).background(Color("white")).ignoresSafeArea().navigationBarBackButtonHidden(true)
+        
     }
 }
 

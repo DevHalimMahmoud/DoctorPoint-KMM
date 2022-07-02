@@ -59,7 +59,7 @@ struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(pages: .constant([TabBarPageModel(page: CreateAccountScreen(), icon: "f1", tag: "home", color: Color.white),
                                      TabBarPageModel(page: ForgetPasswordScreen(), icon: "notification", tag: "notification", color: Color.white),
-                                     TabBarPageModel(page: CreateAccountScreen(), icon: "search", tag: "search", color: Color.white),
+                                     TabBarPageModel(page: SearchScreen(), icon: "search", tag: "search", color: Color.white),
                                      TabBarPageModel(page: CreateAccountScreen(), icon: "document", tag: "document", color: Color.white),
                                      TabBarPageModel(page: CreateAccountScreen(), icon: "category", tag: "category", color: Color.white)]))
     }

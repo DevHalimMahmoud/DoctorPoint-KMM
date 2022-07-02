@@ -7,9 +7,14 @@ struct iOSApp: App {
     var body: some Scene {
         WindowGroup {
             if(FirstLaunchKt.firstLaunch()){
-                OnboardingScreen()
+                NavigationView {
+                    OnboardingScreen()
+                    
+                }
             }else{
-                SigninOrCreateAccountScreen()
+                NavigationView{
+                    SigninOrCreateAccountScreen()
+                }
             }
         }
     }
@@ -31,7 +36,7 @@ extension Color {
         default:
             (a, r, g, b) = (1, 1, 1, 0)
         }
-
+        
         self.init(
             .sRGB,
             red: Double(r) / 255,
@@ -51,10 +56,10 @@ extension View {
 
 
 struct RoundedCorner: Shape {
-
+    
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners
-
+    
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
